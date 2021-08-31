@@ -26,5 +26,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: p1ngod/wildfly:snapshot
-          tags: quay.io/kinzel/wildfly:snapshot
+          tags: |
+            p1ngod/wildfly:snapshot
+            quay.io/kinzel/wildfly:snapshot

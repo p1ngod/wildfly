@@ -1,8 +1,9 @@
-name: learn-github-actions
+name: publish-snapshot
 on:
   push:
     branches:
       - master
+      - github_actions_test
 jobs:
   docker:
     runs-on: ubuntu-latest

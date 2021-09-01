@@ -1,8 +1,7 @@
 name: publish-release
 on:
-  push:
-    tags:
-      - "*.Final"
+  release:
+    types: [published]
 jobs:
   docker:
     runs-on: ubuntu-latest
